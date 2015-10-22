@@ -1,0 +1,38 @@
+h3 {
+  color: #00CDA2;
+  font-weight: bolder;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 35px;
+}
+
+#num_one,
+#num_two {
+  background: #C02125;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 25px;
+  border: none;
+}
+
+#calculateBtn{
+  width: 100%;
+  font-size: 25px;
+  color: #fff;
+  background: #234DA5;
+  border-radius: 15px;
+  border: none;
+
+  :focus {
+
+  }
+}
+
+.answer {
+  font-family: sans-serif;
+  width: 100%;
+  font-size: 25px;
+  border-bottom: 1px gray solid;
+}
