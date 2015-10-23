@@ -1,0 +1,22 @@
+{
+  "name": "thursday",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jaserader/homework_week03_thursday",
+  "authors": [
+    "Jase Rader <jaserader@me.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2"
+  }
+}

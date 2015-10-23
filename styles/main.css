@@ -1,38 +1,67 @@
-h3 {
-  color: #00CDA2;
-  font-weight: bolder;
-  font-family: sans-serif;
-  text-align: center;
-  font-size: 35px;
-}
+html {
+  box-sizing: border-box; }
 
-#num_one,
-#num_two {
-  background: #C02125;
-  color: #fff;
-  width: 100%;
-  height: 50px;
-  padding-left: 10px;
-  font-size: 25px;
-  border: none;
-}
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
 
-#calculateBtn{
-  width: 100%;
-  font-size: 25px;
-  color: #fff;
-  background: #234DA5;
-  border-radius: 15px;
-  border: none;
+* {
+  box-sizing: border-box; }
 
-  :focus {
+main {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  main::after {
+    clear: both;
+    content: "";
+    display: table; }
+  main h3 {
+    text-align: center; }
 
-  }
-}
+section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 17.05961%;
+  height: 50px; }
+  section:last-child {
+    margin-right: 0; }
 
-.answer {
-  font-family: sans-serif;
-  width: 100%;
-  font-size: 25px;
-  border-bottom: 1px gray solid;
-}
+.row1 #clear {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 18.75436%; }
+  .row1 #clear:last-child {
+    margin-right: 0; }
+
+.row1 div.answer {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 60.91982%;
+  height: 45px;
+  background: #98EDEA; }
+  .row1 div.answer:last-child {
+    margin-right: 0; }
+  .row1 div.answer span {
+    font: #fff;
+    font-size: 20px;
+    font-weight: bolder; }
+
+.row2 input,
+.row3 input,
+.row4 input,
+.row5 input {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 18.96686%; }
+  .row2 input:last-child,
+  .row3 input:last-child,
+  .row4 input:last-child,
+  .row5 input:last-child {
+    margin-right: 0; }

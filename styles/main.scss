@@ -1,0 +1,48 @@
+@import "/Users/jaserader/dev/homework/week03/thursday/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "/Users/jaserader/dev/homework/week03/thursday/bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  @include outer-container;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+section {
+  @include span-columns(10 of 12);
+  @include shift(2);
+  height: 50px;
+}
+
+.row1 {
+  #clear {
+    @include span-columns(2.1 of 10);
+  }
+
+  div.answer {
+    @include span-columns(6.2 of 10);
+    height: 45px;
+    background: #98EDEA;
+
+    span {
+      font: #fff;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+}
+
+.row2,
+.row3,
+.row4,
+.row5 {
+  input {
+    @include span-columns(2.5);
+
+  }
+}

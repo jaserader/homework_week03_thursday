@@ -1,16 +1,53 @@
 <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- <input type="text" id="num_one" />
+<br /><br />
+<input type="text" id="num_two" />
+<br /><br /> -->
+<!-- <div class="answer">
+  <br />
+  Answer: <span id="answer"></span>
+</div> -->
+<main>
 
 <h3>Let's Do Some Math:</h3>
 
-<input type="text" id="num_one" />
-<br /><br />
-<input type="text" id="num_two" />
-<br /><br />
-<input type="submit" value="Calculate" id="calculateBtn" />
+<section class="row1">
+  <input type="submit" id="clear" value="C"/>
+  <div class="answer">
+    <span id="answer"></span>
+  </div>
+</section>
 
-<div class="answer">
-  <br />
-  Answer: <span id="answer"></span>
-</div>
+<section class="row2">
+  <input type="submit" id="seven" value="7"/>
+  <input type="submit" id="eight" value="8"/>
+  <input type="submit" id="nine" value="9"/>
+  <input type="submit" id="slash" value="/"/>
+</section>
+
+<section class="row3">
+  <input type="submit" id="four" value="4" />
+  <input type="submit" id="five" value="5"/>
+  <input type="submit" id="six" value="6"/>
+  <input type="submit" id="times" value="x"/>
+</section>
+
+<section class="row4">
+  <input type="submit" id="one" value="1"/>
+  <input type="submit" id="two" value="2"/>
+  <input type="submit" id="three" value="3"/>
+  <input type="submit" id="minus" value="-" />
+</section>
+
+<section class="row5">
+  <input type="submit" id="zero" value="0" />
+  <input type="submit" id="decimal" value="." />
+  <input type="submit" value="=" id="calculateBtn" />
+  <input type="submit" id="plus" value="+" />
+</section>
 
 <script type="text/javascript" src="main.js"></script>
+
+</main>
