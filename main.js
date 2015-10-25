@@ -96,12 +96,11 @@ function handleEqualsClick(event) {
   var value = event.target.value;
 
     if (['='].indexOf(value) != -1) {
-        // answer = geval("x + operator + y");
-        console.log(eval("x + y"));
-        // x = answer;
-        // y = undefined;
-        // operator = undefined;
-        // return
+        answerBox.innerText = eval(x, y).toFixed(2);
+        x = answer;
+        y = undefined;
+        operator = undefined;
+        return
     };
 };
 
@@ -149,9 +148,14 @@ function handleDigitClick(event) {
 
 function handleClearClick (event) {
   var value = event.target.value;
+    answerBox.innerText = 0;
 
-  document.getElementById('answer').innerHTML = 0;
-  return;
+  if (x || y){
+    x = "0";
+    y =  "0";
+    operator = "0";
+    return;
+  }
   // console.log(clear);
   // document.getElementById('answer').reset();
 }
