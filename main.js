@@ -69,11 +69,15 @@
 var x;
 var y;
 var operator;
-// var answer;
+// var equals;
+var answer;
+// var geval = eval;
 
 var digits = document.querySelectorAll('.digit');
 var operators = document.querySelectorAll('.operator');
+var equals = document.getElementById('equals');
 var answerBox = document.getElementById('answer');
+var clear = document.getElementById('clear');
 
 
 for (var i = 0; i < digits.length; i++) {
@@ -84,10 +88,27 @@ for (var i = 0; i < operators.length; i++) {
   operators[i].addEventListener('click', handleOperatorClick);
 }
 
+equals.addEventListener('click', handleEqualsClick);
+clear.addEventListener('click', handleClearClick);
+
+
+function handleEqualsClick(event) {
+  var value = event.target.value;
+
+    if (['='].indexOf(value) != -1) {
+        // answer = geval("x + operator + y");
+        console.log(eval("x + y"));
+        // x = answer;
+        // y = undefined;
+        // operator = undefined;
+        // return
+    };
+};
+
 function handleOperatorClick(event) {
   var value = event.target.value;
 
-  if (['=', '/', 'x', '-', '+'].indexOf(value) != -1) {
+  if (['/', '*', '-', '+'].indexOf(value) != -1) {
     // if (value == '=') {
     //   answer = eval(x + operator + y);
     //   x = answer;
@@ -99,7 +120,7 @@ function handleOperatorClick(event) {
     // operator = value;
     return;
   }
-
+  return;
 };
 
 function handleDigitClick(event) {
@@ -124,4 +145,13 @@ function handleDigitClick(event) {
     answerBox.innerText = x + operator + y;
   }
 
+};
+
+function handleClearClick (event) {
+  var value = event.target.value;
+
+  document.getElementById('answer').innerHTML = 0;
+  return;
+  // console.log(clear);
+  // document.getElementById('answer').reset();
 }
